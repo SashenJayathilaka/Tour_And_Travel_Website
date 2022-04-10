@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HOTEL GP</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+        
+        <!-- header -->
+        <header class = "header" id = "header">
+            <div class = "head-top">
+                <div class = "site-name">
+                    <span>Travel</span>
+                </div>
+                <div class = "site-nav">
+                    <span id = "nav-btn">MENU <i class = "fas fa-bars"></i></span>
+                </div>
+            </div>
+
+            <div class = "head-bottom flex">
+                <h2>NICE AND COMFORTABLE PLACE TO STAY</h2>
+                <p>The Results Are In! Explore This Year’s Expert-Approved List Of Must-See Destinations, Places, And Unforgettable Experiences Guaranteed To Inspire.</p>
+                <button type = "button" class = "head-btn">Discover More</button>
+            </div>
+        </header>
+        <!-- end of header -->
+
+        <!-- side navbar -->
+        <div class = "sidenav" id = "sidenav">
+            <span class = "cancel-btn" id = "cancel-btn">
+                <i class = "fas fa-times"></i>
+            </span>
+
+            <ul class = "navbar">
+                <li><a href = "#header">home</a></li>
+                <li><a href = "#services">services</a></li>
+                <li><a href = "#rooms">rooms</a></li>
+                <li><a href = "#customers">customers</a></li>
+            </ul>
+            <button class = "btn sign-up">sign up</button>
+            <button class = "btn log-in">log in</button>
+        </div>
+        <!-- end of side navbar -->
+
+        <!-- fullscreen modal -->
+        <div id = "modal"></div>
+        <!-- end of fullscreen modal -->
+
+        <!-- body content  -->
+
+        <section class="servicesss">
+
+    <h1 class="headdin">
+        <span>s</span>
+        <span>e</span>
+        <span>r</span>
+        <span>v</span>
+        <span>i</span>
+        <span>c</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+
+    <br>
+    <br>
+
+    <div class="box-container">
+
+        <div class="box">
+            <span class="number">01</span>
+            <i class="fas fa-clock-o"></i>
+            <h3>24 Hour Guest Reception</h3>
+            <p>Just like check-ins and check-outs, your guests will be able to rest easier knowing they can reach you at any hour for simple services like providing a replacement key or…</p>
+        </div>
+        <div class="box">
+            <span class="number">02</span>
+            <i class="fas fa-utensils"></i>
+            <h3>Healthy Food</h3>
+            <p>Business travelers are looking for a breakfast that can keep them fueled throughout their day. Be sure to offer nutritious foods for early risers, not just dense foods like potatoes and buttery scrambled eggs.</p>
+        </div>
+        <div class="box">
+            <span class="number">03</span>
+            <i class="fas fa-subway"></i>
+            <h3>Transportation Services and Information</h3>
+            <p>If your budget allows for transportation services like an airport shuttle, rentable bikes, or transport between your lodgings and downtown, it could make a big difference to travelers – especially with the rise of bleisure travel </p>
+        </div>
+        <div class="box">
+            <span class="number">04</span>
+            <i class="fas fa-broom"></i>
+            <h3>Room Service</h3>
+            <p>A romantic night in still requires sustenance. Offer high-quality dining options so your guests can enjoy their room to the fullest extent. </p>
+        </div>
+        <div class="box">
+            <span class="number">05</span>
+            <i class = "fas fa-swimming-pool"></i>
+            <h3>Pool</h3>
+            <p>A hotel pool automatically means lots of fun for the whole family. It also gives them a reason to spend extra time and maybe even money at your hotel.</p>
+        </div>
+        <div class="box">
+            <span class="number">06</span>
+            <i class="fas fa-wifi"></i>
+            <h3>Free Wifi</h3>
+            <p>It’s 2022 and the people want free wifi! Most hotel guests expect internet services at some level, and many business travelers actually need it for a successful trip. Make sure guests know how to connect or where to find the password when they arrive.</p>
+        </div>
+        <div class="box">
+            <span class="number">07</span>
+            <i class="fas fa-spa"></i>
+            <h3>Spa</h3>
+            <p>A luxurious spa can incorporate some extra magic into any weekend getaway. You can even offer promotions on check-in for couples looking to get massages together.</p>
+        </div>
+        <div class="box">
+            <span class="number">08</span>
+            <i class="fas fa-glass"></i>
+            <h3>Champagne Bar</h3>
+            <p>An abundance of champagne will give your hotel a lavish and glamorous atmosphere. Roll out a cart of choice champagne during brunch or high-traffic lobby hours to give your guests some added splendor during their stay.</p>
+        </div>
+    </div>
+
+    </div>
+
+</section>
+        
+ <!-- end of single service -->
+    
+
+        <div class = "book">
+            <form class = "book-form">
+                <div class = "form-item">
+                    <label for = "checkin-date">Check In Date: </label>
+                    <input type = "date" id = "chekin-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "checkout-date">Check Out Date: </label>
+                    <input type = "date" id = "chekout-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "adult">Adults: </label>
+                    <input type = "number" min = "1" value = "1" id = "adult">
+                </div>
+                <div class = "form-item">
+                    <label for = "children">Children: </label>
+                    <input type = "number" min = "1" value = "1" id = "children">
+                </div>
+                <div class = "form-item">
+                    <label for = "rooms">Rooms: </label>
+                    <input type = "number" min = "1" value = "1" id = "rooms">
+                </div>
+                <div class = "form-item">
+                    <button type = "button" class = "head-btn">Book Now</button>
+                </div>
+            </form>
+        </div>
+
+        <section class = "rooms sec-width" id = "rooms">
+            <h1 class="headdin">
+                <span>H</span>
+                <span>o</span>
+                <span>t</span>
+                <span>e</span>
+                <span>l</span>
+            </h1>
+            <div class = "rooms-container">
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "image/hotel-1.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Hotel Ritz Paris</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                24 Hour security
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Sunset boat trip
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                100 Seating capacity restaurant
+                            </li>
+                        </ul>
+                        <p>These legendary hotels, spotlighted in countless films and literature, weren't just a part of history; they helped to shape it</p>
+                        <p>Famously the headquarters of Coco Chanel, Ernest Hemingway and Ingrid Bergman, the legendary Hotel Ritz Paris has set the standard for luxury hotels since its 1898 opening.Located by the Tuileries gardens and overlooking Place Vendome, it was declared "the most romantic hotel in the world" by Sophia Loren.Besides its A-list clientele and silver screen cameos -- it's starred in classics like "Funny Face," "Love in the Afternoon" and "How to Steal a Million" -- the hotel is renowned for its lavish belle epoque decor, crystal chandeliers and impeccable white-glove service</p>
+                        <p class = "rate">
+                            <span>$205.00 /</span> Per Night
+                        </p>
+                        <button type = "button" class = "btn">visit</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "image/hotel-2.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>The Plaza, New York</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                24-Hour doctor on call
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Airport transfers
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                35 Seating private air-conditioning dining room
+                            </li>
+                        </ul>
+                        <p>Opened in 1907 and designated an official landmark in 1969, The Plaza is arguably the most famous hotel in New York.Located on Fifth Avenue and Central Park South, the 20-story building is the setting of the 1950s "Eloise" children's book series and the backdrop for classic films such as "Funny Girl," "The Great Gatsby" and "Home Alone 2: Lost in New York."Notable guests have included Liza Minnelli, Eleanor Roosevelt, Miles Davis and The Beatles. The hotel offers weekly tours of its interior to the public, led by an architectural historian.</p>
+                        <p class = "rate">
+                            <span>$202.00 /</span> Per Night
+                        </p>
+                        <button type = "button" class = "btn">visit</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "image/hotel-3.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Claridge's, London</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                24-Hour room service
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Free wireless internet access
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Outside catering service
+                            </li>
+                        </ul>
+                        <p>Opened in 1898, this Mayfair institution has been the London residence of Cary Grant, Audrey Hepburn and Yul Brynner. (Spencer Tracy once famously declared that, upon passing, he'd rather go to Claridge's than heaven.)The art deco beauty is also the most storied hotel in England: During World War II, it was the haven for countless dignitaries and heads of state. In fact, Suite 212 was declared Yugoslavian territory in June 1945 so that Crown Prince Alexander II could be born on his own country's soil.Its daily afternoon tea, served in the foyer and accompanied by a live cellist, is as iconic as the hotel itself.</p>
+                        <p class = "rate">
+                            <span>$199.00 /</span> Per Night
+                        </p>
+                        <button type = "button" class = "btn">visit</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "image/hotel-4.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Beverly Hills Hotel, Los Angeles</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                24 Hour security
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Disable rooms & Interconnecting rooms
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Public computer
+                            </li>
+                        </ul>
+                        <p>The Beverly Hills Hotel, built in 1912, is as glamorous as its A-list clientele. Guests have included Marilyn Monroe, John Wayne, Richard Burton and Elizabeth Taylor.In 1948, the hotel's exterior was painted its distinctive pink to mirror the color of the sunset; it was later featured on the cover of the Eagles' "Hotel California" album.The hotel, located on Sunset Boulevard, was named the first historic landmark in Beverly Hills.</p>
+                        <p class = "rate">
+                            <span>$184.00 /</span> Per Night
+                        </p>
+                        <button type = "button" class = "btn">visit</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "image/hotel-5.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Peninsula Hong Kong</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                150 Capacity outdoor terrace
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Babysitting on request
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Tour & excursions
+                            </li>
+                        </ul>
+                        <p>Known as the "Grand Dame of the East," the Peninsula Hong Kong is the flagship property of Peninsula Hotels. In fact, the hotel's name was inspired by its location at the southern tip of the Kowloon Peninsula.Since its opening in 1928, the Peninsula has set the standard for luxury in Hong Kong, from its glossy fleet of green Rolls Royce Phantoms to the private jet available for guest use.It's also Hong Kong's oldest hotel and the first to feature pageboys and buffet dining.</p>
+                        <p class = "rate">
+                            <span>$168.00 /</span> Per Night
+                        </p>
+                        <button type = "button" class = "btn">visit</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "image/hotel-6.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>The Ritz Hotel London</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                E-Bike & horse cart rental
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Airport transfers
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Semi open & outdoor restaurant
+                            </li>
+                        </ul>
+                        <p>The Ritz Hotel, built in 1906, was London's first steel structure and the first hotel in the city to have bathrooms in every guest room.Over its 109-year history, patrons have included nobles like King Edward VIII and movie stars like Charlie Chaplin. Of its many claims to fame, however, perhaps the most widely known is its appearance in the 1999 film "Notting Hill," starring Julia Roberts and Hugh Grant.</p>
+                        <p class = "rate">
+                            <span>$188.00 /</span> Per Night
+                        </p>
+                        <button type = "button" class = "btn">visit</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+            </div>
+        </section>
+
+        <br>
+        <br>
+        <br>
+
+        
+        <!-- footer -->
+        <footer class = "footer">
+            <div class = "footer-container">
+                <div>
+                    <h2>About Us </h2>
+                    <p>The Results Are In! Explore This Year’s Expert-Approved List Of Must-See Destinations, Places, And Unforgettable Experiences Guaranteed To Inspire.</p>
+                    <ul class = "social-icons">
+                        <li class = "flex">
+                            <i class = "fa fa-twitter fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-facebook fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-instagram fa-2x"></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>TOP DESTINATIONS</h2>
+                    <a href = "#">Sydney</a>
+                    <a href = "#">New York</a>
+                    <a href = "#">Tokyo</a>
+                    <a href = "#">Paris</a>
+                    <a href = "#">San Francisco</a>
+                    <a href = "#">London</a>
+                    <a href = "#">İstanbul</a>
+                    <a href = "#">Rome</a>
+                    <a href = "#">Buenos Aires</a>
+                </div>
+
+                <div>
+                    <h2>TRAVEL INTERESTS</h2>
+                    <a href = "#">Adventure Travel</a>
+                    <a href = "#">Art And Culture</a>
+                    <a href = "#">Beaches, Coasts, And Islands</a>
+                    <a href = "#">Family Holidays</a>
+                    <a href = "#">Festivals</a>
+                    <a href = "#">Food And Drink</a>
+                    <a href = "#">Honeymoon And Romance</a>
+                    <a href = "#">Road Trips</a>
+                    <a href = "#">Sustainable Travel</a>
+                    <a href = "#">Travel Gear And Tech</a>
+                    <a href = "#">Travel On A Budget</a>
+                    <a href = "#">Wildlife And Nature</a>
+                </div>
+
+                <div>
+                    <h2>Contact Us</h2>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-map-marker-alt"></i>
+                        </span>
+                        <span>
+                            Best Travel #486-235 Bulding
+                            Sit Road.Azusa France 34852
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span>
+                            (461) 453-733
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span>
+                            Besttrave733@Gmail.Com
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+        
+        <script src="new/script.js"></script>
+    </body>
+</html>
